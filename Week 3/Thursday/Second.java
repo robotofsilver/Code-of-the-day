@@ -56,5 +56,26 @@ public class Second{
 	      System.out.println("Positive sum: " + positive);
 	      System.out.println("Negative sum: " + negative);
 	  }
+	
+	
+	public static void positive_negitive_sums(int[] array_to_sum) //Martin Lennan's method
+	{
+		int negative_sum = 0;
+		int positive_sum = 0;
+		
+		for (int current_index = 0; current_index < array_to_sum.length; current_index++)
+		{
+			 if (array_to_sum[current_index] < 0)
+			 {
+				 negative_sum += array_to_sum[current_index];
+			 }
+			 else
+			 {
+				 positive_sum += array_to_sum[current_index];
+			 }
+		}
+		System.out.println("negative: " + negative_sum + "\npositive: " + positive_sum);
+	}
+
 
 }
