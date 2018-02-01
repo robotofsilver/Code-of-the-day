@@ -38,3 +38,9 @@ public class Thursday{
 public static String numMethod(String word){
 		return  ("" +word.charAt(0) + (word.length()-2)+ word.charAt(word.length()-1)); 
 	}
+
+//Martin Lennan's method
+	public static String first_between_last(String given_string)
+	{
+		return ("" + given_string.charAt(0) + (given_string.length()-2) + given_string.charAt(given_string.length()-1));
+	}
