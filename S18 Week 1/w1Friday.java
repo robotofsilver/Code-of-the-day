@@ -33,5 +33,26 @@ public class w1Friday{
     
     
   }
+  
+  //Martin Lennan's method
+  	public static String first_between_last(String given_string)
+	{
+		String converted_string = "";
+		String[] words_split = given_string.split(" ");
+		for (int current_string_index = 0; current_string_index < words_split.length; current_string_index++)
+		{
+			if (words_split[current_string_index].length() > 3)
+			{
+				converted_string += "" + words_split[current_string_index].charAt(0) + (words_split[current_string_index].length()-2) + 
+									words_split[current_string_index].charAt(words_split[current_string_index].length()-1);
+			}
+			else
+			{
+				converted_string += words_split[current_string_index];
+			}
+			converted_string += " ";
+		}
+		return converted_string;
+	}
 
 }
