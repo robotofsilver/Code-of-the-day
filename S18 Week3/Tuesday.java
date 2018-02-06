@@ -1,4 +1,4 @@
-publci class{
+public class{
   
   public static void main(String [] args){
   
@@ -13,11 +13,28 @@ publci class{
 //
 //Otherwise, return the string "mocha_missing!"
   
-  }jk
+  }
 
 
 }
+ public static String caffineBuzz (int n) { //Rushabh's Method
+		String msg = "";
+		if(n%3==0 ) {
+			if(n%2==0) {
+			msg="Java Script";
+			}else if(n%4==0 && n%2==0) {
+				msg="coffee Script";
+			}else if(n%4==0) {
+				msg="coffee";
+			}
+			else if(n%3==0) {
+				msg="Java";
+			}
 
+		}
+		return msg;
+	}
+	
 public static String numberMethod(int n) // Daniel's Method
     {
         String temp = "";
