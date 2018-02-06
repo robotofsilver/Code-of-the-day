@@ -13,7 +13,7 @@ publci class{
 //
 //Otherwise, return the string "mocha_missing!"
   
-  }
+  }jk
 
 
 }
@@ -79,4 +79,15 @@ public static String numberMethod(int n) // Daniel's Method
 		}
 		return "mocha_missing!";
 
+	}
+//Ariel's Method
+if(num / 3){
+	System.out.println("Java");
+}
+else if((num /3))&&((num /4){
+	System.out.println("Coffee");
+	if(num%12 == 0){
+	System.out.print("Coffee Script");
+	}
+}
 	}
