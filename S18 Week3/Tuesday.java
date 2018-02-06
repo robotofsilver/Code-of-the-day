@@ -81,6 +81,25 @@ public static String numberMethod(int n) // Daniel's Method
 		
 		return msg;
   }
+	//Martin Lennan's method
+	public static String coffee(int given)
+	{
+		if ( (given % 3) == 0)
+		{
+			if ( (given % 4) == 0)
+			{
+				return "Coffee Script";
+			}
+			if ( (given % 2) == 0)
+			{
+				return "Java Script";
+			}
+			return "Java";
+		}
+		return "mocha_missing!";
+	}
+
+
     static String work(int x) { //juancarlos olivares
 		if (x % 3 == 0 && x % 4 == 0) {
 			if (x % 2 == 0) {
