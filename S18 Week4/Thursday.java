@@ -7,7 +7,11 @@ public class thursday{
     
     
     }
-static String change(int x){//jc
+
+
+
+static String change(int x){//juancarlos method
+
 		
 		if(x%3 == 0 && x%5 == 0){
 			return "FizzBuzz";
