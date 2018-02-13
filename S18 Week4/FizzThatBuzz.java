@@ -28,7 +28,7 @@ public class FizzThatBuzz {
         }
     
     private static String divide(int number) {//Rushabh's Method
-		// TODO Auto-generated method stub
+		// Checking if its divisible by 3 5 and 3 and 5 both
 		String value=" ";
 		if(number%3==0) {
 			value="Fizz";
