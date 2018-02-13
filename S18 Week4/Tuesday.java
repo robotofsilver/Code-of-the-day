@@ -66,3 +66,22 @@ public class FizzThatBuzz {
 		
 		return result;
 	}
+
+//Martin Lennan's method
+	public static String check_divisibility(int given)
+	{
+		if ( (given % 3) == 0)
+		{
+			if ( (given % 5) == 0)
+			{
+				return "fizzbuzz";
+			}
+			return "fizz";
+		}
+		if ( (given % 5) == 0)
+		{
+			return "buzz";
+		}
+		return "";
+	}
+
