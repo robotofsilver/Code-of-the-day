@@ -26,6 +26,22 @@ public class FizzThatBuzz {
             return "Buzz";
         return "Something Broke.";
         }
+    
+    private static String divide(int number) {//Rushabh's Method
+		// TODO Auto-generated method stub
+		String value=" ";
+		if(number%3==0) {
+			value="Fizz";
+		}
+		if(number%5 == 0) {
+			value="Buzz";
+		}
+		if(number%5 == 0 && number%3==0) {
+			value="Fizz_Buzz";
+		}
+		
+		return value;
+	}
         
     public static void main(String[] args) {
        Scanner input = new Scanner(System.in);
