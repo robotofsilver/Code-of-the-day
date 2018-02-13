@@ -11,13 +11,13 @@ import java.util.Scanner;
  *
  * @author Berna
  */
-public class Tuesday {
+public class FizzThatBuzz {
 
     /**
      * Maria P.
      */
     
-    static String fizzBuzz(int n){ . // Maria
+    static String fizzBuzz(int n){
         if((n%3 == 0) && (n%5 == 0))
             return "FizzBuzz";
         else if(n%3 == 0)
@@ -49,3 +49,20 @@ public class Tuesday {
     }
     
 }
+
+
+//Ariel's Mathod
+	public static String Method(int num){
+		String result = "";
+		if (num%3 == 0 && num%5==0){
+			result ="fizzbuzz";
+		}
+		else if (num%3 == 0){
+			result ="fizz";
+		}
+		else if(num%5 ==0){
+		result = "buzz";
+		}
+		
+		return result;
+	}
