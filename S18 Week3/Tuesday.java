@@ -12,11 +12,11 @@ import java.util.Scanner;
  * @author Berna
  */
 public class Tuesday {
-
-    /**
-     * Maria P.
-     */
-    
+  public static void main(String[] args) {
+       //*****Fizz Buzz method****
+	  
+	  
+    }
     static String fizzBuzz(int n){
         if((n%3 == 0) && (n%5 == 0))
             return "FizzBuzz";
@@ -25,8 +25,10 @@ public class Tuesday {
         else if(n%5 == 0)
             return "Buzz";
         return "Something Broke.";
-        }
-    
+    }
+	
+	
+ 
     private static String divide(int number) {//Rushabh's Method
 		// Checking if its divisible by 3 5 and 3 and 5 both
 		String value=" ";
@@ -41,14 +43,24 @@ public class Tuesday {
 		}
 		
 		return value;
-	}
-        
-    public static void main(String[] args) {
-       Scanner input = new Scanner(System.in);
-      System.out.println(fizzBuzz(input.nextInt()));
     }
+	
+   public static String AlvaroMethod(int num){
+	   
+	   if(num % 15 ==0)
+		   return "Fizz Buzz";
+	   if(num % 3 ==0)
+		   return "Fizz";
+	   if(num % 5 ==0)
+		   return "Buzz";
+	   return " ";
+   }
+        
+  
     
-}
+
+
+	
 
 
 //Ariel's Mathod
