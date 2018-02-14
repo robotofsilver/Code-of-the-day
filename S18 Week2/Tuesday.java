@@ -14,9 +14,21 @@ public class Tuesday{
 //Otherwise, return the string "mocha_missing!"
   
   }
-
-
-}
+ 
+	
+ public static String caffeineBuzz(int n){
+        
+       if(n % 12==0)
+            return "CoffeeScript"; 
+        if(n % 6 ==0)
+            return "JavaScript";
+        if(n % 3==0)
+            return "Java";
+	 
+        return "mocha_missing!";
+    
+    
+  }
  public static String caffineBuzz (int n) { //Rushabh's Method
 		String msg = "";
 		if(n%3==0 ) {
