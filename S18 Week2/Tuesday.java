@@ -1,4 +1,4 @@
-public class{
+public class Tuesday{
   
   public static void main(String [] args){
   
