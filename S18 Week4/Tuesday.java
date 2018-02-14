@@ -106,5 +106,18 @@ public static String sepStr(String str) // Daniel's Method
         return temp;
     }
 
+public static String fizzBuzz(int num) { //Kevin's Method
+        String str = "";
+        if(num % 3 == 0) {
+            str += "Fizz";
+            if(num % 5 == 0) {
+                str += "Buzz";
+            }
+        }
+        else if(num % 5 == 0) {
+            str += "Buzz";
+        }
+        return str;
+    }
 
 
