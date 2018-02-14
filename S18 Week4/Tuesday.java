@@ -118,4 +118,21 @@ public static String fizzBuzz(int num) { //Kevin's Method
         return str;
     }
 
+public static void divisibleByThreeFive(int n)	//Esther's method
+	{
+		if(n%3 == 0 && n%5 == 0)
+		{
+			System.out.println("fizzbuzz");
+		}
+		else if(n%3 == 0)
+		{
+			System.out.println("fizz");
+		}
+		else if(n%5 == 0)
+		{
+			System.out.println("buzz");
+		}
+		
+	}
+
 
