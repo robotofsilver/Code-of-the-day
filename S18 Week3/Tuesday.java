@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Berna
  */
-public class FizzThatBuzz {
+public class Tuesday {
 
     /**
      * Maria P.
