@@ -1,1 +1,1 @@
-# Code-of-the-day
+# Program-of-the-day
