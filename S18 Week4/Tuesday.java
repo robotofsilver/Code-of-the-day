@@ -85,25 +85,23 @@ public class FizzThatBuzz {
 		return "";
 	}
 
-public static String sepStr(String str) // Daniel's Method
-    {
-        String[] array = str.split(" ");
-
-        String temp = "";
-        
-        for(int i = 0; i < array.length; i++) 
+ public static String retStr(int n) // Daniel's Method
+    { 
+         String temp = "";
+        if((n%15) == 0)
         {
-            if(array[i].length() > 3)
-            {
-                temp += newWord(array[i]) + " ";
-            }
-            else
-            {
-                temp += array[i] + " ";
-            }   
+            temp = "Fizzbuzz";
         }
-        
-        return temp;
+        else if((n%5) == 0)
+        {
+            temp= "Buzz";
+        }
+        else if((n%3)== 0)
+        {
+            temp= "Fizz";
+        }
+            
+       return temp;
     }
 
 public static String fizzBuzz(int num) { //Kevin's Method
