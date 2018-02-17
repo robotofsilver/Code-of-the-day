@@ -71,10 +71,9 @@ public static String stringConvert(String a)	//Esther's method
 		
 		return a;
 	}
- public static String MartinLennon(String a)
+ public static String first_num_last(String given) //Martin Lennan's code
  {
-
-	 
+	return "" + given.charAt(0) + (given.length()-2) + given.charAt(given.length()-1);
  }
 	
 public static String Rushdah(String a) 
