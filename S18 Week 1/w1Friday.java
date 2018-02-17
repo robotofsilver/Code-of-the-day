@@ -109,10 +109,26 @@ public class w1Friday{
         return retString;
     }
 	
-  public static String MartinLennon(String words){
-	  
-	  
-  }
+	public static String check_divisibility(String given)	//Martin Lennan's method
+	{
+	String[] split_words = given.split(" ");
+	String to_return = "";
+	for (int current_word = 0; current_word < split_words.length; current_word++)
+	{
+		if (split_words[current_word].length() > 3)
+		{
+			split_words[current_word] = "" + split_words[current_word].charAt(0) + (split_words[current_word].length()-2) + 
+								split_words[current_word].charAt(split_words[current_word].length()-1);
+		}
+	}
+
+	for (int current_word = 0; current_word < split_words.length; current_word++)
+	{
+		to_return += split_words[current_word] + " ";
+	}
+
+	return to_return;
+	}
 	
   public static String JamesC(String words){
 	  
