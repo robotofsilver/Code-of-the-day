@@ -26,7 +26,9 @@ public class tuesdays{
 		return validity;
 	}
 
-
+	public static boolean checkPalendrome(String str) { //Kevin's method
+        	return str.trim().replaceAll("\\W", "").equalsIgnoreCase(new StringBuilder(str.trim().replaceAll("\\W", "")).reverse().toString());
+    	}
 
 
 
