@@ -1,4 +1,4 @@
-public class tuesdays{
+public class tuesday{
   
   
   public static void main(String arg[]){
@@ -51,6 +51,16 @@ public class tuesdays{
 				return false;
 		}
         return true;
+	}
+	public static boolean method(String str){ //Alvaro's Method
+		
+	  String str1 = new StringBuilder(str.replaceAll("[\\W]", "")).reverse().toString();
+          String str2 = new StringBuilder(str.replaceAll("[\\W]", "")).toString();
+          //System.out.println("String: " + str2+", "+ str2);
+          
+          return str1.equals(str2);
+		
+		
 	}
 
 }
