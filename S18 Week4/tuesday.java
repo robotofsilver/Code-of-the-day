@@ -29,6 +29,17 @@ public class tuesdays{
 
 
 
-
+	public static boolean check_palindrome(String palindrome)	//Martin Lennan's method
+	{
+		palindrome = palindrome.replaceAll(" |,|-", "");
+		palindrome = palindrome.toLowerCase();
+		boolean continue_check = true;
+		for (int current_check = 0; (current_check < palindrome.length()/2) && continue_check; current_check++)
+		{
+			if (palindrome.charAt(current_check) != palindrome.charAt(palindrome.length()-current_check-1) )
+				return false;
+		}
+        return true;
+	}
 
 }
