@@ -39,7 +39,26 @@ public class Friday {
       
     } // Daniel's Method Done
     
-    
+    //Kevin Ramirez method
+  public static int[] sortAges(int[] ages) {
+      int[] sortedArr = new int[ages.length];
+      
+      for(int i = 0; i < ages.length; i++) {
+          for(int j = i + 1; j < ages.length; j++) {
+              if(ages[j] < ages[i]) {
+                  int tmp = ages[i];
+                  ages[i] = ages[j];
+                  ages[j] = tmp;
+              }
+          }
+      }
+      
+      for(int i = 0; i < sortedArr.length; i++) {
+          sortedArr[i] = ages[i];
+      }
+      
+      return sortedArr;
+  }
     
     
   }
