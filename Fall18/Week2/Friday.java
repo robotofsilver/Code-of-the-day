@@ -59,6 +59,24 @@ public class Friday {
       
       return sortedArr;
   }
+    //James Cunningham's method
+    public static int[] Sort(int[] arrayS) {
+        int[] sortedarray = new int[arrayS.length];
+
+        for (int i = 0; i <= 20; i++) {
+            for (int j = i; j <= 20; j++) {
+
+                if (sortedarray[i] > sortedarray[i + 1]) {
+                    int temp = sortedarray[j];
+                    sortedarray[j] = sortedarray[j - 1];
+                    sortedarray[j - 1] = temp;
+                }
+            }
+
+        }
+
+        return sortedarray;
+    }
     
     
   }
