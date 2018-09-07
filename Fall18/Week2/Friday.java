@@ -10,5 +10,37 @@ public class Friday {
     }
     
     //Create an method which takes in an array of ages and returns a sorted array.
+    public static void sortedArray(int[] ar) // Daniel's Method
+    {
+         boolean swap = true;
+
+         int cool = 0;
+
+         int temp;
+
+         while(swap == true)
+         {
+             swap = false;
+
+             cool++;
+
+             for (int i = 0; i < ar.length - cool; i++) 
+             {
+                 if(ar[i] > ar[i + 1])
+                 {
+                     temp = ar[i];
+                     ar[i] = ar[i + 1];
+                     ar[i + 1] = temp;
+                     swap = true;
+                 }
+
+             }
+         }
+      
+    } // Daniel's Method Done
+    
+    
+    
+    
   }
 }
