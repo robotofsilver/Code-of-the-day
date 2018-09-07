@@ -1,6 +1,6 @@
 import java.util.Random;
 public class Friday {
-  Random rng = new Random();
+  public static Random rng = new Random();
   public static void main(String[] args) {
     int[] age_array = new int[1000];
     
