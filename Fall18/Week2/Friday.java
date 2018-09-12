@@ -39,6 +39,28 @@ public class Friday {
       
     } // Daniel's Method Done
     
+  public static int[] sort_array(int[] array_to_sort)//Martin Lennan's method
+	{
+		int[] sorted_array = new int[array_to_sort.length];
+		int[] age_counters = new int[17];
+		for (int current_index = 0; current_index < 1000; current_index++)
+		{
+			age_counters[array_to_sort[current_index] - 5]++;
+		}
+		int current_sorted_index = 0;
+		for(int current_age_counter = 0; current_age_counter < 17; current_age_counter++ )
+		{
+			while (age_counters[current_age_counter] > 0)
+			{
+				sorted_array[current_sorted_index] = current_age_counter + 5;
+				age_counters[current_age_counter]--;
+				current_sorted_index++;
+			}
+		}
+		System.out.println(Arrays.toString(sorted_array));
+		return sorted_array;
+	}
+    
     //Kevin Ramirez method
   public static int[] sortAges(int[] ages) {
       int[] sortedArr = new int[ages.length];
