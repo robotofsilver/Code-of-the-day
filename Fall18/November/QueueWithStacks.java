@@ -23,3 +23,72 @@ public class QueueWithStacks {
   //Add your QueuePoll method below this line. Include your name above the method you added.
   
 }
+
+class QueuePoll //Martin Lennan's queue object
+{
+	stack stackPile;
+	stack queuePile;
+	boolean isStack;
+	
+	public QueuePoll(int size)
+	{
+		stackPile = new stack(size);
+		queuePile = new stack(size);
+		isStack = true;
+	}
+	
+	public void enqueue(int num)
+	{
+		if (!isStack)
+		{
+			flipStacks();
+		}
+		stackPile.push(num);
+	}
+	
+	public int dequeue()
+	{
+		if (isStack)
+		{
+			flipStacks();
+		}
+		return queuePile.pop();
+	}
+	
+	public int peek()
+	{
+		if (isStack)
+		{
+			flipStacks();
+		}
+		return queuePile.peek();
+	}
+	
+	public boolean isEmpty()
+	{
+		if (isStack)
+		{
+			return stackPile.isEmpty();
+		}
+		return queuePile.isEmpty();
+	}
+	
+	private void flipStacks()
+	{
+		if (isStack)
+		{
+			while (!stackPile.isEmpty())
+			{
+				queuePile.push(stackPile.pop());
+			}
+		}
+		else
+		{
+			while (!queuePile.isEmpty())
+			{
+				stackPile.push(queuePile.pop());
+			}
+		}
+	}
+	
+}
