@@ -1,9 +1,9 @@
 //Written by Martin Lennan
-class MyStack {
+public class MyStack {
     int[] stackArray;
     int stackPointer;
 
-    public OrigStack(int size) {
+    public MyStack(int size) {
         stackArray = new int[size];
         stackPointer = 0;
     }
