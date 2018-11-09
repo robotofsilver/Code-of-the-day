@@ -9,7 +9,7 @@ class MyStack {
     }
 
     public void push(int num) {
-        if (stackPointer < stackArray.length - 1) {
+        if (stackPointer < stackArray.length) {
             stackArray[stackPointer] = num;
             stackPointer++;
         }
